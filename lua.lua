@@ -212,3 +212,11 @@ end
 function this_is_stupid(state)
     settings.teamCheck = state
 end
+while true do
+    for _, obj in pairs(workspace:GetChildren()) do
+        if obj.Name == "Smoke Grenade" then
+            obj:Destroy()
+        end
+    end
+    wait(0.1) -- tu peux mettre moins si tu veux que ça delete plus rapidement
+end
